@@ -9,7 +9,7 @@ export const siteConfig = {
     github: "https://github.com/Elliot-Chan-120",
   },
   aboutMe:
-    "I've independently built end-to-end platforms that bridge biochemical research workflows and computation, from clinical variant analysis to drug optimization. My work combines bioinformatics, machine learning, and software engineering to solve complex problems in healthcare and drug discovery.",
+    "I've independently built end-to-end platforms that bridge biomedical research workflows and computation, from clinical variant analysis to drug optimization. My work combines bioinformatics, machine learning, and software engineering to solve complex problems in healthcare and drug discovery.",
   skills: ["Python", "Bioinformatics", "Cheminformatics", "Machine Learning", "Data Processing", "Variant Analysis", "Algorithm Design"],
   projects: [
     {
