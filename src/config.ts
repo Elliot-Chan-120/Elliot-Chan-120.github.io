@@ -32,14 +32,14 @@ export const siteConfig = {
     name: "NOCTURNAL: Exploring the Dark Chemical Space",
     color: "#8fbcbb",
     //section 1
-    description: "A drug discovery framework designed for drug-structure screening and lead optimization against user-defined biological targets. Paired with interactive chemical space analysis and various chemical-similarity calculations, aimed at accelerating drug candidate identification and optimization",
+    description: "A drug discovery framework designed for drug-structure screening and lead optimization against user-defined biological targets. Paired with interactive chemical space analysis and various chemical-similarity calculations, aimed at accelerating drug candidate identification and optimization.",
     skills: ["Molecular Fingerprinting", "Drug-Discovery", "Cheminformatics", "Chemical Space Network Visualization", "Machine Learning"],
     //section 2
     repoTitle: "Repository Link | Thorough breakdown and source code here",
     repoLink: "https://github.com/Elliot-Chan-120/NOCTURNAL/blob/main/README.md",
 
     //section 3
-    videoTitle: "Demo CSN Link | Look at NOCTURNAL's Chemical Space Network for Optimized Computational Drug Candidates against AD",
+    videoTitle: "Demo CSN Link | Look at a Chemical Space Network for Optimized Computational Drug Candidates against AD, generated using NOCTURNAL",
     videoLink: "optimized_csn_model1_hybrid.html",
   },
 
