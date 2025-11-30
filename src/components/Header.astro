@@ -1,8 +1,5 @@
 ---
 import { siteConfig } from "../config";
-
-const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
-const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
 const hasEducation = siteConfig.education && siteConfig.education.length > 0;
 ---
 
@@ -20,30 +17,30 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
           About
         </a>
       </li>
-      {
-        hasProjects && (
-          <li>
-            <a
-              href="#projects"
-              class="text-gray-700 hover:text-black transition-colors font-medium"
-            >
-              Projects
-            </a>
-          </li>
-        )
-      }
-      {
-        hasExperience && (
-          <li>
-            <a
-              href="#experience"
-              class="text-gray-700 hover:text-black transition-colors font-medium"
-            >
-              Experience
-            </a>
-          </li>
-        )
-      }
+      <li>
+        <a
+          href="#gem"
+          class="text-gray-700 hover:text-black transition-colors font-medium"
+        >
+          GEM
+        </a>
+      </li>
+      <li>
+        <a
+          href="#nocturnal"
+          class="text-gray-700 hover:text-black transition-colors font-medium"
+        >
+          NOCTURNAL
+        </a>
+      </li>
+      <li>
+        <a
+          href="#datasift"
+          class="text-gray-700 hover:text-black transition-colors font-medium"
+        >
+          DataSift
+        </a>
+      </li>
       {
         hasEducation && (
           <li>
