@@ -2,14 +2,31 @@ export const siteConfig = {
   name: "Elliot Chan",
   title: "Computational Biologist | Honours Biomedical Sciences Graduate",
   description: "Project Portfolio website of Elliot Chan",
-  accentColor: "#5e81ac",
+
+  //colours
+  accentColor: "#5E81AC",
+
+  // Nord Palette
+  polarnight1Color: "#2e3440",
+  snowWhiteColor: "#eceff4",
+  frostGreenColor: "#8FBCCB",
+  frostLBlueColor: "#88C0D0",
+  frostBlueColor: "#81A1C1",
+  frostDBlueColor: "#5E81AC",
+  auroraRedColor: "#BF616A",
+  auroraOrangeColor: "#D08770",
+  auroraYellowColor: "#EBCB8B",
+  auroraGreenColor: "#A3BE8C",
+  auroraPurpleColor: "#B48EAD",
+
+
   social: {
     email: "e224chan@uwaterloo.ca",
     linkedin: "https://www.linkedin.com/in/elliot-chan-6206b01ba/",
     github: "https://github.com/Elliot-Chan-120",
   },
   aboutMe:
-    "I've independently built end-to-end platforms that bridge biomedical research workflows and computation, from clinical variant analysis to drug optimization. My work combines bioinformatics, machine learning, and algorithmic innovation to solve complex problems in healthcare and drug discovery.",
+    "I've independently built end-to-end platforms that bridge biomedical research workflows and computation, from clinical variant analysis to drug optimization. My work combines bioinformatics, machine learning, and algorithmic innovation to solve complex problems in the computational side of healthcare. Outside programming I'm either training (Weights / Running / Muay Thai / Boxing), or reading. Actively looking for entry-level bioinformatics, computational biology, or ML roles.",
   skills: ["Python", "Bioinformatics", "Cheminformatics", "Machine Learning", "Data Processing", "Variant Analysis", "Algorithm Design"],
 
 
@@ -60,7 +77,7 @@ export const siteConfig = {
       degree: "Honours Biomedical Sciences",
       dateRange: "2020-2024",
       achievements: [
-        "Graduated with Distinction: GPA 81.4%",
+        "Graduated with Distinction",
       ],
     },
   ],
