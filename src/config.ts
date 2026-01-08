@@ -4,7 +4,7 @@ export const siteConfig = {
   description: "Project Portfolio website of Elliot Chan",
 
   //colours
-  accentColor: "#5E81AC",
+  accentColor: "#2e3440",
 
   // Nord Palette
   polarnight1Color: "#2e3440",
@@ -43,6 +43,17 @@ export const siteConfig = {
     //section 3
     videoTitle: "Demo Video Link | Watch GEM repair a pretend gene variant",
     videoLink: "https://youtu.be/83pVzD2D_qE",
+  },
+
+  PRISM: {
+    name: "PRISM: Screen. Repair. Interpret. Repeat.",
+    color: "#5E81AC",
+    //section 1
+    description: "A CLI-based bioinformatics framework for high-performance gene variant pathogenicity screening and computational gene therapy candidate identification with local AI integration for result interpretability and future scope identification. Derived from GEM, PRISM is a prototype that addresses the gap in balancing classification accuracy and biological understanding and insight.",
+    skills: ["Bioinformatics", "Genomics + Variant Analysis and Screening", "Machine Learning", "Command-line Interface", "AI Integration", "AI-Assisted Interpretation", "Prompt and Model Control", "CLI Development", "Packaging and Distribution"],
+    //section 2
+    repoTitle: "Repository Link | Test run demonstration and source code + breakdown here. Video Coming Soon!",
+    repoLink: "https://github.com/Elliot-Chan-120/PRISM",
   },
 
   NOCTURNAL: {
