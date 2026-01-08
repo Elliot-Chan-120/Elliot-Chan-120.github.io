@@ -49,7 +49,7 @@ export const siteConfig = {
     name: "PRISM: Screen. Repair. Interpret. Repeat.",
     color: "#5E81AC",
     //section 1
-    description: "A CLI-based bioinformatics framework for high-performance gene variant pathogenicity screening and computational gene therapy candidate identification with local AI integration for result interpretability and future scope identification. Derived from GEM, PRISM is a prototype that addresses the gap in balancing classification accuracy and biological understanding and insight.",
+    description: "A CLI-based bioinformatics framework for high-performance gene variant pathogenicity screening and computational gene therapy candidate identification with local AI integration for result interpretability and future scope identification. Derived from GEM, PRISM is a prototype that addresses the gap in balancing classification accuracy with biological understanding and insight.",
     skills: ["Bioinformatics", "Genomics + Variant Analysis and Screening", "Machine Learning", "Command-line Interface", "AI Integration", "AI-Assisted Interpretation", "Prompt and Model Control", "CLI Development", "Packaging and Distribution"],
     //section 2
     repoTitle: "Repository Link | Test run demonstration and source code + breakdown here. Video Coming Soon!",
