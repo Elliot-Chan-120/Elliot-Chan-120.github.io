@@ -37,22 +37,22 @@ export const siteConfig = {
     description: "90% ROC-AUC, 89.6% PR-AUC, 82% Accuracy: A gene variant pathogenicity screening platform powered by my custom 500 + feature engineering pipeline, paired with my personal feature space optimization tool DataSift. Includes ReGen, an iterative guided mutation algorithm capable of identifying gene therapy targets.",
     skills: ["Gene Variant Analysis", "Genetic Screening", "Bioinformatics", "Multiprocessing Optimization", "Machine Learning", "Model Optimization"],
     //section 2
-    repoTitle: "Repository Link | Thorough breakdown and source code here",
+    repoTitle: "GEM Repository Link | Thorough breakdown and source code here",
     repoLink: "https://github.com/Elliot-Chan-120/GEM/blob/main/README.md",
 
     //section 3
-    videoTitle: "Demo Video Link | Watch GEM repair a pretend gene variant",
+    videoTitle: "GEM Demo Video Link | Watch GEM repair a pretend gene variant",
     videoLink: "https://youtu.be/83pVzD2D_qE",
   },
 
   PRISM: {
     name: "PRISM: Screen. Repair. Interpret. Repeat.",
-    color: "#5E81AC",
+    color: "#88C0D0",
     //section 1
     description: "A CLI-based bioinformatics framework for high-performance gene variant pathogenicity screening and computational gene therapy candidate identification with local AI integration for result interpretability and future scope identification. Derived from GEM, PRISM is a prototype that addresses the gap in balancing classification accuracy with biological understanding and insight.",
     skills: ["Bioinformatics", "Genomics + Variant Analysis and Screening", "Machine Learning", "Command-line Interface", "AI Integration", "AI-Assisted Interpretation", "Prompt and Model Control", "CLI Development", "Packaging and Distribution"],
     //section 2
-    repoTitle: "Repository Link | Test run demonstration and source code + breakdown here. Video Coming Soon!",
+    repoTitle: "PRISM Repository Link | Test run demonstration, source code + breakdown here",
     repoLink: "https://github.com/Elliot-Chan-120/PRISM",
   },
 
@@ -83,7 +83,7 @@ export const siteConfig = {
   },
 
   BlueTuna: {
-    name: "BlueTuna",
+    name: "BlueTuna ><>",
     color: "#5E81AC",
     //section 1
     description: "A multi-stage hyperparameter optimization engine for binary classifiers. Characterizes the parameter landscape before searching it.",

@@ -1,0 +1,209 @@
+---
+import { siteConfig } from "../config";
+const GEM_data = siteConfig.GEM;
+const PRISM_data = siteConfig.PRISM;
+---
+
+<!--title section-->
+<section id="gem_prism" class="p-8 sm:p-12 md:p-16 lg:p-24">
+    <div class="grid grid-cols-1 gap-8 lg:gap-16 items-start">
+        <div class="lg:col-span-4">
+            <h2
+                class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900"
+            >
+                GEM & PRISM: Screen, Repair, Interpret
+            </h2>
+            <div
+                class="w-[200px] h-[10px] mt-2 rounded-full"
+                style={`background-color: ${GEM_data.color}`}
+            >
+            </div>
+            <div
+                class="w-[200px] h-[10px] mt-2 rounded-full"
+                style={`background-color: ${PRISM_data.color}`}
+            >
+            </div>
+        </div>
+    </div>
+
+    <!--box 1-->
+    <div class="grid grid-cols-1 gap-8 lg:gap-16 items-start">
+        <div>
+            <p
+                class={`text-lg font-mono sm:text-xl md:text-2xl leading-relaxed text-Black mt-3 ${GEM_data.repoLink ? "pr-12 sm:pr-14 md:pr-16" : ""}`}
+            >
+                <!--1st paragraph for GEM -->
+                GEM is an ML-enhanced framework designed to classify and repair gene
+                variants for reduced pathogenicity. Featuring a 500+ feature engineering
+                pipeline paired with my personal feature space optimization tool DataSift,
+                GEM has trained high-performance models with 90% ROC-AUC, 89.6% PR-AUC
+                and 82% Accuracy, and that's just from looking at the sequence and
+                chromosome number. ReGen, a system present in both GEM and PRISM,
+                is an iterative guided mutation algorithm capable of identifying gene
+                therapy targets when presented with a pathogenic gene variant.
+                <br>
+                <br>
+                PRISM extends GEM into a result-oriented worktool of its own.
+                <br>
+                <br>
+                Where GEM trains models and produces predictions, PRISM is
+                specialized towards producing and interpreting said results.
+                Possessing the same feature engineering pipeline and algorithms,
+                PRISM not only features a CLI system but also includes an
+                AI-interpretation layer, allowing for generation of biologically
+                grounded hypotheses based on result data as well as experimental
+                follow-up proposals. This allows users to drag + drop files into
+                PRISM then screen, repair, and interpret gene variants from the
+                CLI.
+            </p>
+            <div class="flex flex-wrap gap-1.5 sm:gap-2 pt-2">
+                {
+                    PRISM_data.skills.map((skill) => (
+                        <span
+                            class={`px-2.5 sm:px-3 py-1 sm:py-1.5 bg-gray-900 text-white rounded-md sm:rounded-lg text-xs sm:text-sm font-medium transition-all duration-300 ${
+                                GEM_data.repoLink
+                                    ? "group-hover:bg-gray-800"
+                                    : ""
+                            }`}
+                        >
+                            {skill}
+                        </span>
+                    ))
+                }
+            </div>
+        </div>
+    </div>
+
+    <!--GEM RepoLink box-->
+    <div class="lg:col-span-8">
+        <div class="space-y-8">
+            <div class="group relative">
+                <!--RepoBox-->
+                <a
+                    href={GEM_data.repoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="group relative p-16 max-w-2x1 w-full"
+                >
+                    <div
+                        class="relative p-8 md:p-16 bg-white rounded-3xl border-2 border-gray-200 shadow-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 hover:border-gray-300 mt-4"
+                    >
+                        <!-- Arrow icon in top-right -->
+                        <div
+                            class="absolute top-6 right-6 w-11 h-11 flex items-center justify-center bg-gray-900 rounded-full text-white transition-all duration-300 group-hover:bg-gray-700"
+                            style={`background-color: ${GEM_data.color}`}
+                        >
+                            <svg
+                                class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M7 17L17 7M17 7H7M17 7V17"></path>
+                            </svg>
+                        </div>
+
+                        <div class="pr-24">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                                {GEM_data.repoTitle}
+                            </h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--GEM VideoLink box-->
+    <div class="lg:col-span-8">
+        <div class="space-y-8">
+            <div class="group relative">
+                <a
+                    href={GEM_data.videoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="group relative p-16 max-w-2x1 w-full"
+                >
+                    <div
+                        class="relative p-8 md:p-16 bg-white rounded-3xl border-2 border-gray-200 shadow-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 hover:border-gray-300"
+                    >
+                        <!-- Arrow icon in top-right -->
+                        <div
+                            class="absolute top-6 right-6 w-11 h-11 flex items-center justify-center bg-gray-900 rounded-full text-white transition-all duration-300 group-hover:bg-gray-700"
+                            style={`background-color: ${GEM_data.color}`}
+                        >
+                            <svg
+                                class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M7 17L17 7M17 7H7M17 7V17"></path>
+                            </svg>
+                        </div>
+
+                        <div class="pr-24">
+                            <h3
+                                class="text-2xl x1:text-7x-1 font-bold text-gray-900 mb-4"
+                            >
+                                {GEM_data.videoTitle}
+                            </h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--PRISM RepoLink box-->
+    <div class="lg:col-span-8">
+        <div class="space-y-8">
+            <div class="group relative">
+                <!--RepoBox-->
+                <a
+                    href={PRISM_data.repoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="group relative p-16 max-w-2x1 w-full"
+                >
+                    <div
+                        class="relative p-8 md:p-16 bg-white rounded-3xl border-2 border-gray-200 shadow-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 hover:border-gray-300 mt-4"
+                    >
+                        <!-- Arrow icon in top-right -->
+                        <div
+                            class="absolute top-6 right-6 w-11 h-11 flex items-center justify-center bg-gray-900 rounded-full text-white transition-all duration-300 group-hover:bg-gray-700"
+                            style={`background-color: ${PRISM_data.color}`}
+                        >
+                            <svg
+                                class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M7 17L17 7M17 7H7M17 7V17"></path>
+                            </svg>
+                        </div>
+
+                        <div class="pr-24">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                                {PRISM_data.repoTitle}
+                            </h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
