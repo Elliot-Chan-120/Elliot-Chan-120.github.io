@@ -80,7 +80,18 @@ export const siteConfig = {
     //section 2
     repoTitle: "Repository Link | Model performances breakdown and source code here",
     repoLink: "https://github.com/Elliot-Chan-120/DataSift",
-    },
+  },
+
+  BlueTuna: {
+    name: "BlueTuna",
+    color: "#5E81AC",
+    //section 1
+    description: "A multi-stage hyperparameter optimization engine for binary classifiers. Characterizes the parameter landscape before searching it.",
+    skills: ["Hyperparameter Optimization", "Machine Learning", "Model Optimization"],
+    //section 2
+    repoTitle: "Repository Link | Methodology, benchmark results, and in-depth technical breakdown here",
+    repoLink: "https://github.com/Elliot-Chan-120/BlueTuna",
+  },
 
   education: [
     {
