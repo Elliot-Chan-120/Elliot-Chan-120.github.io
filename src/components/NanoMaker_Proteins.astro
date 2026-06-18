@@ -1,0 +1,128 @@
+---
+import { siteConfig } from "../config";
+const palette = siteConfig.palette;
+---
+
+<div class="proj-id">
+    cd NanoMaker
+    <br />
+    source .venv/bin/activate
+    <br />
+    python3 nnmkr.py generate protein_pockets
+    <br />
+    python3 nnmkr.py visualize protein_pockets.nnpkt --verbose True
+    <br />
+    <br />
+    INTERACTIVE_PROTEIN_VISUALIZER.....ONLINE<span class="cursor">●</span>
+</div>
+
+<div class="previews-grid">
+    <div class="card">
+        <div class="preview-window">
+            <div class="preview-bar">
+                <span>binding tgt: insulin</span>
+            </div>
+            identifier: amino acid id
+            <div class="preview-container">
+                <iframe src="/insulin_color_code.html"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="preview-window">
+            <div class="preview-bar">
+                <span>binding tgt: mylotarg</span>
+            </div>
+            identifier: steric accessibility
+            <div class="preview-container">
+                <iframe src="/mylotarg_steric_accessibility.html"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="preview-window">
+            <div class="preview-bar">
+                <span>binding tgt: paclitaxel</span>
+            </div>
+            identifier: polar character
+            <div class="preview-container">
+                <iframe src="/paclitaxel_polar_character.html"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="preview-window">
+            <div class="preview-bar">
+                <span>binding tgt: vitamin C</span>
+            </div>
+            identifier: hydrophobicity
+            <div class="preview-container">
+                <iframe src="/vitamin_C_pocket_hydrophobicity.html"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        --text-primary: #8fbccb;
+        --text-secondary: #8fbccb;
+        --accent: #4c566a;
+        border: 1px solid var(--accent);
+        padding: 1rem;
+        margin-top: 0.25rem;
+        margin-bottom: 0.25rem;
+        margin-left: 0.25rem;
+        margin-right: 0.5rem;
+        font-family: "IBM Plex Mono", monospace;
+    }
+    .proj-id {
+        font-size: 16px;
+        color: #d8dee9;
+        letter-spacing: 0.1em;
+        margin-bottom: 4px;
+    }
+    .proj-name {
+        font-size: 30px;
+        font-weight: 700;
+        color: #8fbccb;
+        margin-bottom: 6px;
+    }
+    .proj-desc {
+        font-size: 16px;
+        color: var(--text-secondary);
+        line-height: 1.4;
+    }
+    .body-paragraph {
+        font-size: 14px;
+        color: var(--text-primary);
+        letter-spacing: 0.1em;
+    }
+
+    .previews-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .preview-container {
+        width: 600;
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        transform: scale(1);
+        transform-origin: top left;
+    }
+
+    .cursor {
+        color: #8fbccb;
+        animation: blink 1.5s step-end infinite;
+        margin-left: 2px;
+    }
+</style>

@@ -1,0 +1,77 @@
+---
+import { siteConfig } from "../config";
+const palette = siteConfig.palette;
+
+interface Props {
+    label?: string;
+    maxWidth?: string;
+    accent: string;
+    barColor: string;
+    barthickness: string;
+}
+
+const {
+    label,
+    accent = palette.accent,
+    barColor = palette.bg,
+    maxWidth = "100%",
+    barthickness = "2px",
+} = Astro.props;
+---
+
+<div
+    class="panel"
+    style={`--accent: ${accent}; --barColor: ${barColor}; --max-width: ${maxWidth}; --barthickness: ${barthickness};`}
+>
+    <span class="panel-label">{label}</span>
+    <span class="corner tl">+</span>
+    <span class="corner tr">+</span>
+    <span class="corner bl">+</span>
+    <span class="corner br">+</span>
+    <slot />
+</div>
+
+<style>
+    .panel {
+        max-width: var(--max-width);
+        margin-inline: auto;
+        border: var(--barthickness) solid var(--barColor);
+        padding: 1rem 1rem;
+        position: relative;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    .panel-label {
+        position: absolute;
+        top: -9px;
+        left: 1rem;
+        background: #1d2021;
+        padding: 0 6px;
+        font-size: 12px;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: var(--accent);
+    }
+    .corner {
+        position: absolute;
+        font-size: 15px;
+        color: var(--accent);
+        line-height: 0.7;
+    }
+    .tl {
+        top: 2px;
+        left: 2px;
+    }
+    .tr {
+        top: 2px;
+        right: 2px;
+    }
+    .bl {
+        bottom: 2px;
+        left: 2px;
+    }
+    .br {
+        bottom: 2px;
+        right: 2px;
+    }
+</style>

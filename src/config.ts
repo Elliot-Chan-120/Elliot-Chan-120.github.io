@@ -3,94 +3,37 @@ export const siteConfig = {
   title: "Computational Biologist | Honours Biomedical Sciences Graduate",
   description: "Project Portfolio website of Elliot Chan",
 
-  //colours
-  accentColor: "#2e3440",
 
-  // Nord Palette
-  polarnight1Color: "#2e3440",
-  snowWhiteColor: "#eceff4",
-  frostGreenColor: "#8FBCCB",
-  frostLBlueColor: "#88C0D0",
-  frostBlueColor: "#81A1C1",
-  frostDBlueColor: "#5E81AC",
-  auroraRedColor: "#BF616A",
-  auroraOrangeColor: "#D08770",
-  auroraYellowColor: "#EBCB8B",
-  auroraGreenColor: "#A3BE8C",
-  auroraPurpleColor: "#B48EAD",
+  palette: {
+    // default
+    bg: "#2e3440", // this isnt the real background color but im too lazy to fix it.
+    accent: "#fabd2f",
+    mpurple: "#8684af",
 
+    // Nord Palette
+    polarlight: "#4c566a",
+    polarlight2: "#434c5e",
+    polarlight3: "#3b4252",
+    polarnight1Color: "#2e3440",
+    snowWhiteColor: "#eceff4",
+    snow2: "#e5e9f0",
+    snow3: "#d8dee9",
+    darksnow: "#a7b5cd",
+    frostGreenColor: "#8FBCCB",
+    frostLBlueColor: "#88C0D0",
+    frostBlueColor: "#81A1C1",
+    frostDBlueColor: "#5E81AC",
+    auroraRedColor: "#BF616A",
+    auroraOrangeColor: "#D08770",
+    auroraYellowColor: "#EBCB8B",
+    auroraGreenColor: "#A3BE8C",
+    auroraPurpleColor: "#B48EAD",
+  },
 
   social: {
     email: "e224chan@uwaterloo.ca",
     linkedin: "https://www.linkedin.com/in/elliot-chan-6206b01ba/",
     github: "https://github.com/Elliot-Chan-120",
-  },
-  aboutMe:
-    "I've independently built end-to-end platforms that bridge biomedical research workflows and computation, from clinical variant analysis to drug optimization. My work combines bioinformatics, machine learning, and algorithmic innovation to solve complex problems in the computational side of healthcare. Outside programming I'm either training (Weights / Running / Muay Thai / Boxing), or reading. Actively looking for entry-level bioinformatics, computational biology, or ML roles.",
-  skills: ["Python", "Bioinformatics", "Cheminformatics", "Machine Learning", "Data Processing", "Variant Analysis", "Algorithm Design"],
-
-
-  GEM: {
-    name: "GEM: Benign by Design",
-    color: "#a3be8c",
-    //section 1
-    description: "90% ROC-AUC, 89.6% PR-AUC, 82% Accuracy: A gene variant pathogenicity screening platform powered by my custom 500 + feature engineering pipeline, paired with my personal feature space optimization tool DataSift. Includes ReGen, an iterative guided mutation algorithm capable of identifying gene therapy targets.",
-    skills: ["Gene Variant Analysis", "Genetic Screening", "Bioinformatics", "Multiprocessing Optimization", "Machine Learning", "Model Optimization"],
-    //section 2
-    repoTitle: "GEM Repository Link | Thorough breakdown and source code here",
-    repoLink: "https://github.com/Elliot-Chan-120/GEM/blob/main/README.md",
-
-    //section 3
-    videoTitle: "GEM Demo Video Link | Watch GEM repair a pretend gene variant",
-    videoLink: "https://youtu.be/83pVzD2D_qE",
-  },
-
-  PRISM: {
-    name: "PRISM: Screen. Repair. Interpret. Repeat.",
-    color: "#88C0D0",
-    //section 1
-    description: "A CLI-based bioinformatics framework for high-performance gene variant pathogenicity screening and computational gene therapy candidate identification with local AI integration for result interpretability and future scope identification. Derived from GEM, PRISM is a prototype that addresses the gap in balancing classification accuracy with biological understanding and insight.",
-    skills: ["Bioinformatics", "Genomics + Variant Analysis and Screening", "Machine Learning", "Command-line Interface", "AI Integration", "AI-Assisted Interpretation", "Prompt and Model Control", "CLI Development", "Packaging and Distribution"],
-    //section 2
-    repoTitle: "PRISM Repository Link | Test run demonstration, source code + breakdown here",
-    repoLink: "https://github.com/Elliot-Chan-120/PRISM",
-  },
-
-  NOCTURNAL: {
-    name: "NOCTURNAL: Exploring the Dark Chemical Space",
-    color: "#8fbcbb",
-    //section 1
-    description: "A drug discovery framework designed for drug-structure screening and lead optimization against user-defined biological targets. Paired with interactive chemical space analysis and various chemical-similarity calculations, aimed at accelerating drug candidate identification and optimization.",
-    skills: ["Molecular Fingerprinting", "Drug-Discovery", "Cheminformatics", "Chemical Space Network Visualization", "Machine Learning"],
-    //section 2
-    repoTitle: "Repository Link | Thorough breakdown and source code here",
-    repoLink: "https://github.com/Elliot-Chan-120/NOCTURNAL/blob/main/README.md",
-
-    //section 3
-    videoTitle: "Demo CSN Link | Look at a Chemical Space Network for Optimized Computational Drug Candidates against AD, generated using NOCTURNAL",
-    videoLink: "optimized_csn_model1_hybrid.html",
-  },
-
-  DataSift: {
-    name: "DataSift: Less Noise, More Performance",
-    color: "#b48ead",
-    //section 1
-    description: "A feature space optimization tool for Binary Classifier efficiency optimization. Combining a thorough variance threshold optimizer and a backward-iteration importance-based feature pruner, this module is geared towards high-dimensional data where less noise == more performance.",
-    skills: ["Machine Learning", "Model Optimization", "Feature Analysis / Optimization",],
-    //section 2
-    repoTitle: "Repository Link | Model performances breakdown and source code here",
-    repoLink: "https://github.com/Elliot-Chan-120/DataSift",
-  },
-
-  BlueTuna: {
-    name: "BlueTuna ><>",
-    color: "#5E81AC",
-    //section 1
-    description: "A multi-stage hyperparameter optimization engine for binary classifiers. Characterizes the parameter landscape before searching it.",
-    skills: ["Hyperparameter Optimization", "Machine Learning", "Model Optimization"],
-    //section 2
-    repoTitle: "Repository Link | Methodology, benchmark results, and in-depth technical breakdown here",
-    repoLink: "https://github.com/Elliot-Chan-120/BlueTuna",
   },
 
   education: [

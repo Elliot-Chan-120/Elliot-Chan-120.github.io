@@ -1,15 +1,14 @@
 ---
-import Header from "../components/Header.astro";
+import Panel from "../components/panel.astro";
 import Hero from "../components/Hero.astro";
-import About from "../components/About.astro";
-import GEM_PRISM from "../components/GEM_PRISM.astro";
-import NOCTURNAL from "../components/NOCTURNAL.astro";
-import DataSift from "../components/DataSift.astro";
-import BlueTuna from "../components/BlueTuna.astro";
-import Education from "../components/Education.astro";
+import NanoMaker from "../components/NanoMaker.astro";
+import NanoMaker_Proteins from "../components/NanoMaker_Proteins.astro";
+import PRISMATIC from "../components/PRISMATIC.astro";
+import BlueTuna_and_NOCTURNAL from "../components/BlueTuna_and_NOCTURNAL.astro";
 import Footer from "../components/Footer.astro";
 import { siteConfig } from "../config";
 import "../styles/global.css";
+const palette = siteConfig.palette;
 ---
 
 <html lang="en">
@@ -28,15 +27,62 @@ import "../styles/global.css";
     <title>{siteConfig.name} - {siteConfig.title}</title>
   </head>
   <body>
-    <Header />
-    <section>
-      <Hero />
-      <About />
-      <GEM_PRISM />
-      <BlueTuna />
-      <NOCTURNAL />
-      <DataSift />
-      <Education />
+    <section class="screen">
+        <Panel
+        maxWidth="1000px"
+        barColor={palette.darksnow}
+        accent={palette.darksnow}
+        barthickness="0px"
+      >
+        <Hero />
+      </Panel>
+    </section>
+
+    <div id="nanomaker"></div>
+    <section class="screen">
+
+      <Panel
+        maxWidth="1100px"
+        barColor={palette.polarnight1Color}
+        accent={palette.snow3}
+        barthickness="4px"
+      >
+        <NanoMaker />
+      </Panel>
+    </section>
+
+    <div id="nanomaker_proteins"></div>
+    <Panel
+      maxWidth=90%
+      barColor={palette.polarlight}
+      accent={palette.auroraPurpleColor}
+      barthickness="1px"
+    >
+      <NanoMaker_Proteins />
+    </Panel>
+
+    <div id="prismatic"></div>
+    <section class="screen">
+      <Panel
+        maxWidth="1100px"
+        barColor={palette.darksnow}
+        accent={palette.darksnow}
+        barthickness="1px"
+      >
+        <PRISMATIC />
+      </Panel>
+    </section>
+
+    <div id="bluetuna_nocturnal"></div>
+    <section class="screen">
+      <Panel
+        maxWidth="80%"
+        barColor={palette.snowWhiteColor}
+        accent={palette.snowWhiteColor}
+        barthickness="None"
+      >
+        <BlueTuna_and_NOCTURNAL />
+      </Panel>
     </section>
     <Footer />
   </body>

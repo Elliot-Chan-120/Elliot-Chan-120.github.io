@@ -1,0 +1,221 @@
+---
+import { siteConfig } from "../config";
+const palette = siteConfig.palette;
+---
+
+<div class="card">
+    <div class="proj-id">
+        PRJ_PRISMATIC.....ONLINE<span class="cursor">●</span>
+        <div class="proj-name">
+            PRISMATIC
+            <span class="blink1">●</span>
+            <span class="blink2">●</span>
+            <span class="blink3">●</span>
+            <span class="blink4">●</span>
+            <span class="blink5">●</span>
+            <span class="blink6">●</span>
+        </div>
+        <p class="proj-desc">damage decoder, repair proposer</p>
+
+        <p class="body-paragraph">
+            ------------------------------------
+            <br />
+            A full-stack platform for mutation screening and therapeutic candidate
+            identification.
+            <br />
+            <br />
+            Present PRISMATIC with the chromosome number and sequence strings (mutation
+            site + context) of any mutation, and it will predict the pct. chance of
+            pathogenicity and benignity. Functionality expands to therapeutic repair
+            candidate identification, powered by ReGen, a custom guided-mutation algorithm
+            designed to reduce pathogenicity and locate + break past benignity maxima.
+            <br />
+            <br />
+            Powered by a 500+ feature extraction pipeline spanning research-backed
+            DNA biochemistry, predicted protein properties, genomic domain shift detection
+            and motif tracking from DNA synthesis to post-protein production.
+            <br />
+            <br />
+            Deployed model metrics below.
+        </p>
+
+        <div class="metrics">
+            <div class="metric">
+                <span class="dim">ROC-AUC</span>
+                <span class="val">90.0%</span>
+                <div class="bar">
+                    <div class="fill" style="width:90%"></div>
+                </div>
+            </div>
+            <div class="metric">
+                <span class="dim">PR-AUC</span>
+                <span class="val">90.0%</span>
+                <div class="bar">
+                    <div class="fill" style="width:90%"></div>
+                </div>
+            </div>
+            <div class="metric">
+                <span class="dim">F1</span>
+                <span class="val">82.0%</span>
+                <div class="bar">
+                    <div class="fill" style="width:82%"></div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <a href={"https://prismatic-xi.vercel.app"} target="_blank" class="btn">
+            ACCESS: LIVE DEMO + MORE INFORMATION HERE <span class="arrow"
+                >→</span
+            >
+        </a>
+        <br />
+
+        <div class="tags">
+            <span class="tag">Bioinformatics</span>
+            <span class="tag">Feature Engineering</span>
+            <span class="tag">Algorithm Design</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Domain Integration</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">React</span>
+        </div>
+    </div>
+
+    <style>
+        .card {
+            --text-primary: #d8dee9;
+            --text-secondary: #d8dee9;
+            --accent: #d8dee9;
+            border: 1px solid var(--accent);
+            padding: 1rem;
+            font-family: "IBM Plex Mono", monospace;
+        }
+        .proj-id {
+            font-size: 16px;
+            color: var(--text-secondary);
+            letter-spacing: 0.1em;
+            margin-bottom: 4px;
+        }
+        .proj-name {
+            font-size: 30px;
+            font-weight: 700;
+            color: #d8dee9;
+            margin-bottom: 6px;
+        }
+        .proj-desc {
+            font-size: 16px;
+            color: var(--text-secondary);
+            line-height: 1.4;
+        }
+        .body-paragraph {
+            font-size: 14px;
+            color: var(--text-primary);
+            letter-spacing: 0.1em;
+        }
+        .metrics {
+            margin: 0.75rem 0;
+        }
+        .metric {
+            margin-bottom: 6px;
+        }
+        .dim {
+            font-size: 10px;
+            color: #d8dee9;
+        }
+        .val {
+            font-size: 10px;
+            color: #a3be8c;
+            margin-left: 8px;
+        }
+        .bar {
+            height: 3px;
+            background: #5e81ac;
+            margin-top: 3px;
+        }
+        .fill {
+            height: 3px;
+            background: #a3be8c;
+        }
+        .tags {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            margin-top: 8px;
+        }
+        .tag {
+            font-size: 9px;
+            padding: 2px 7px;
+            border: 1px solid #1e3a2f;
+            color: #4a8c6a;
+            letter-spacing: 0.05em;
+        }
+        .btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            font-family: "IBM Plex Mono", monospace;
+            font-size: 11px;
+            letter-spacing: 0.15em;
+            text-decoration: none;
+
+            background: transparent;
+            color:;
+            border: 1px solid #d8dee9;
+
+            transition:
+                background 0.15s,
+                color 0.15s;
+        }
+
+        .btn:hover {
+            background: #d8dee9;
+            color: #0d0f12; /* or var(--bg) if you set that variable */
+        }
+
+        .arrow {
+            transition: transform 0.15s;
+        }
+
+        .btn:hover .arrow {
+            transform: translateX(3px);
+        }
+
+        .cursor {
+            color: #d8dee9;
+            animation: blink 1.5s step-end infinite;
+            margin-left: 2px;
+        }
+
+        .blink1 {
+            color: #5e81ac;
+            animation: blink 1.5s step-end infinite;
+            animation-delay: 0.2s;
+        }
+        .blink2 {
+            color: #b48ead;
+            animation: blink 1.5s step-end infinite;
+            animation-delay: 0.4s;
+        }
+        .blink3 {
+            color: #bf616a;
+            animation: blink 1.5s step-end infinite;
+            animation-delay: 0.6s;
+        }
+        .blink4 {
+            color: #d08770;
+            animation: blink 1.5s step-end infinite;
+            animation-delay: 0.8s;
+        }
+        .blink5 {
+            color: #ebcb8b;
+            animation: blink 1.5s step-end infinite;
+            animation-delay: 1s;
+        }
+        .blink6 {
+            color: #a3be8c;
+            animation: blink 1.5s step-end infinite;
+            animation-delay: 1.2s;
+        }
+    </style>
+</div>

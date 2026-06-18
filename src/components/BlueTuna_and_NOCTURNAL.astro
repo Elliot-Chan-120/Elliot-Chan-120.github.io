@@ -1,0 +1,243 @@
+---
+import { siteConfig } from "../config";
+const palette = siteConfig.palette;
+---
+
+<div class="grid-layout">
+    <div class="card">
+        <div class="proj-id">
+            HYPERPARAMETER_OPTIMIZER.....ONLINE<span class="cursor">●</span>
+        </div>
+        <div class="proj-name">
+            BlueTuna
+            <span class="tuna_icon1">&gt;</span><span class="tuna_icon2"
+                >&lt;</span
+            ><span class="tuna_icon3">&gt;</span>
+        </div>
+        <p class="body-paragraph">
+            BlueTuna creatively addresses the task of hyperparameter
+            optimization by breaking it down into 3 stages, each informing the
+            next:
+            <br />
+            <br />
+            [1]: Parameter search space filtering via **gradient-based region scoring**,
+            isolates regions most likely to contain performance optima
+            <br />
+            [2]: **Custom perceptron training** on Latin Hypercube-sampled data from filtered
+            search space to better "see" the hyperparameter landscape
+            <br />
+            [3]: **Fixed-weight gradient descent** on hyperparameter values, guiding model
+            performance towards optima
+            <br />
+            <br />
+            BlueTuna was able to achieve a competitive performance ceiling against
+            Optuna (top-performing optimizer), beating it on 5/20 trials and competitive
+            on 40%. Notably, its median performance slightly exceeded Optuna's, demonstrating
+            its limitation to be consistency rather than performance ceiling.
+        </p>
+        <br>
+        <a
+            href={"https://github.com/Elliot-Chan-120/BlueTuna"}
+            target="_blank"
+            class="btn"
+        >
+            ACCESS: DOCUMENTATION/BENCHMARKS <span class="arrow">→</span>
+        </a>
+        <br>
+
+        <div class="tags">
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Algorithmic Design</span>
+            <span class="tag">Hyperparameter Optimization</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="proj-id">
+            DRUG_DISCOVERY_FRAMEWORK.....ONLINE<span class="cursor2">●</span>
+        </div>
+        <div class="proj-name">NOCTURNAL</div>
+        <div
+            class="w-[250px] h-[3px] mt-2 rounded-full"
+            style={`background-color: ${palette.frostGreenColor}`}
+        >
+        </div>
+        <div
+            class="w-[200px] h-[3px] mt-2 rounded-full"
+            style={`background-color: ${palette.polarnight1Color}`}
+        >
+        </div>
+        <p class="proj-desc">exploring the dark chemical space</p>
+        <p class="body-paragraph">
+            <br />
+            A drug discovery framework designed for drug-structure screening and lead
+            optimization against user-defined biological targets. Paired with interactive
+            chemical space analysis and various chemical-similarity calculations,
+            aimed at accelerating drug candidate identification and optimization.
+            <br />
+            <br />
+            Features "MutaGen", a molecular optimization algorithm that leverages
+            a curated molecular fragment library To intelligently modify drug molecules,
+            using ML models to predict new molecule potencies.
+            <br />
+            <br />
+            Employs plateau-breaking strategies across 3 possible molecular changes:
+            adding fragments, replacing atoms and removal. Automatically filters out
+            molecules that violate drug-likeness rules.
+        </p>
+        <br>
+        <a
+            href={"https://github.com/Elliot-Chan-120/NOCTURNAL/blob/main/README.md"}
+            target="_blank"
+            class="btn"
+        >
+            ACCESS: DOCUMENTATION/TESTRUN <span class="arrow">→</span>
+        </a>
+        <br>
+
+        <div class="tags">
+            <span class="tag">Drug Discovery</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Cheminformatics</span>
+            <span class="tag">Machine Learning Pipelines</span>
+            <span class="tag">Domain Integration</span>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        --text-primary: #d8dee9;
+        --text-secondary: #d8dee9;
+        --accent: None;
+        border: 1px solid var(--accent);
+        padding: 1rem;
+        font-family: "IBM Plex Mono", monospace;
+    }
+    .proj-id {
+        font-size: 16px;
+        color: var(--text-secondary);
+        letter-spacing: 0.1em;
+        margin-bottom: 4px;
+    }
+    .proj-name {
+        font-size: 30px;
+        font-weight: 700;
+        color: #d8dee9;
+        margin-bottom: 6px;
+    }
+    .proj-desc {
+        font-size: 16px;
+        color: var(--text-secondary);
+        line-height: 1.4;
+    }
+    .body-paragraph {
+        font-size: 14px;
+        color: var(--text-primary);
+        letter-spacing: 0.1em;
+    }
+    .metrics {
+        margin: 0.75rem 0;
+    }
+    .metric {
+        margin-bottom: 6px;
+    }
+    .dim {
+        font-size: 10px;
+        color: #d8dee9;
+    }
+    .val {
+        font-size: 10px;
+        color: #a3be8c;
+        margin-left: 8px;
+    }
+    .bar {
+        height: 3px;
+        background: #5e81ac;
+        margin-top: 3px;
+    }
+    .fill {
+        height: 3px;
+        background: #a3be8c;
+    }
+    .tags {
+        display: flex;
+        gap: 6px;
+        flex-wrap: wrap;
+        margin-top: 8px;
+    }
+    .tag {
+        font-size: 9px;
+        padding: 2px 7px;
+        border: 1px solid #1e3a2f;
+        color: #4a8c6a;
+        letter-spacing: 0.05em;
+    }
+    .btn {
+        display: flex;
+        justify-content: left;
+        gap: 8px;
+        padding: 8px 16px;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 11px;
+        letter-spacing: 0.15em;
+        text-decoration: none;
+
+        background: transparent;
+        color:;
+        border: 1px solid #d8dee9;
+        margin-top: 8px;
+
+        transition:
+            background 0.15s,
+            color 0.15s;
+    }
+
+    .btn:hover {
+        background: #d8dee9;
+        color: #0d0f12; /* or var(--bg) if you set that variable */
+    }
+
+    .arrow {
+        transition: transform 0.15s;
+    }
+
+    .btn:hover .arrow {
+        transform: translateX(3px);
+    }
+
+    .grid-layout {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+    .tuna_icon1 {
+        color: #5e81ac;
+        animation: blink 1.1s step-end infinite;
+        animation-delay: 0.8s;
+    }
+    .tuna_icon2 {
+        color: #5e81ac;
+        animation: blink 1.1s step-end infinite;
+        animation-delay: 1s;
+    }
+    .tuna_icon3 {
+        color: #5e81ac;
+        animation: blink 1.1s step-end infinite;
+        animation-delay: 1.2s;
+    }
+
+    .cursor {
+        color: #5e81ac;
+        animation: blink 1.6s step-end infinite;
+        margin-left: 2px;
+        animation-delay: 0.2s;
+    }
+
+    .cursor2 {
+        color: #88c0d0;
+        animation: blink 1.6s step-end infinite;
+        margin-left: 2px;
+        animation-delay: 1.1s;
+    }
+</style>
