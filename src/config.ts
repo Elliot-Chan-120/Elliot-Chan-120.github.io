@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Elliot Chan",
-  title: "Computational Biologist | Honours Biomedical Sciences Graduate",
+  title: "Computational Biologist & ML Engineer Project Portfolio",
   description: "Project Portfolio website of Elliot Chan",
 
 
